@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Order - Cafeteria</title>
+<link rel="stylesheet" href="style.css">
+<style>
+    body {
+        font-family: Arial, sans-serif;
+    }
+    nav ul {
+        list-style-type: none;
+        padding: 0;
+    }
+    nav ul li {
+        display: inline;
+        margin-right: 10px;
+    }
+    .container {
+        width: 80%;
+        margin: 0 auto;
+    }
+    .logo {
+        display: block;
+        margin: 20px auto;
+    }
+    h2 {
+        color: #333;
+    }
+    label {
+        display: block;
+        margin: 10px 0;
+    }
+    .pizza-section, .drink-section {
+        margin-bottom: 30px;
+    }
+    .pizza-item {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 1px solid #ddd;
+        padding: 10px 0;
+    }
+    .pizza-item label {
+        flex-grow: 1;
+    }
+    .pizza-item .sizes {
+        display: flex;
+        justify-content: space-between;
+        width: 200px;
+    }
+</style>
+</head>
+<body>
+<nav>
+    <ul>
+        <li><a href="login.html">Login</a></li>
+        <li><a href="Signup.html">Register</a></li>
+        <li><a href="contact.html">Kontakt</a></li>
+        <li><a href="about.html">Über uns</a></li>
+        <li><a href="hours.html">Öffnungszeiten</a></li>
+        <li><a href="order.html">Meine Bestellung</a></li>
+    </ul>
+</nav>
+<main>
+    <div class="container">
+        <img src="logo.png" alt="Logo" class="logo">
+        <form action="payment.html" method="post">
+            <h2>Select Food Items</h2>
+            <label>
+                <input type="checkbox" name="food" value="Burger"> Burger
+            </label>
+            <label>
+                <input type="checkbox" name="food" value="Fries"> Fries
+            </label>
+            
+            <div class="pizza-section">
+                <h2>Select Pizza</h2>
+                <div class="pizza-item">
+                    <label>
+                        <input type="checkbox" name="pizza" value="Pizza Margherita"> Pizza Margherita
+                    </label>
+                    <div class="sizes">
+                        <span>28 cm - 9,50 €</span>
+                        <span>40 cm - 16,00 €</span>
+                    </div>
+                </div>
+                <div class="pizza-item">
+                    <label>
+                        <input type="checkbox" name="pizza" value="Pizza Classico"> Pizza Classico
+                    </label>
+                    <div class="sizes">
+                        <span>28 cm - 11,50 €</span>
+                        <span>40 cm - 21,50 €</span>
+                    </div>
+                </div>
+                <div class="pizza-item">
+                    <label>
+                        <input type="checkbox" name="pizza" value="Pizza Schinken"> Pizza Schinken
+                    </label>
+                    <div class="sizes">
+                        <span>28 cm - 11,50 €</span>
+                        <span>40 cm - 21,50 €</span>
+                    </div>
+                </div>
+                <div class="pizza-item">
+                    <label>
+                        <input type="checkbox" name="pizza" value="Pizza Caprese"> Pizza Caprese
+                    </label>
+                    <div class="sizes">
+                        <span>28 cm - 11,50 €</span>
+                        <span>40 cm - 21,50 €</span>
+                    </div>
+                </div>
+                <div class="pizza-item">
+                    <label>
+                        <input type="checkbox" name="pizza" value="Pizza Funghi"> Pizza Funghi
+                    </label>
+                    <div class="sizes">
+                        <span>28 cm - 11,50 €</span>
+                        <span>40 cm - 21,50 €</span>
+                    </div>
+                </div>
+                <div class="pizza-item">
+                    <label>
+                        <input type="checkbox" name="pizza" value="Pizza Hawaii"> Pizza Hawaii
+                    </label>
+                    <div class="sizes">
+                        <span>28 cm - 12,00 €</span>
+                        <span>40 cm - 22,00 €</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="drink-section">
+                <h2>Select Drinks</h2>
+                <label>
+                    <input type="checkbox" name="drink" value="Coke"> Coke
+                </label>
+                <label>
+                    <input type="checkbox" name="drink" value="Pepsi"> Pepsi
+                </label>
+                <label>
+                    <input type="checkbox" name="drink" value="Water"> Water
+                </label>
+            </div>
+            
+            <button type="submit">Proceed to Payment</button>
+        </form>
+    </div>
+</main>
+<footer>
+    <div class="footer-container">
+        <div class="footer-section">
+            <h3>Home</h3>
+            <p>+4915129615077</p>
+            <p><a href="mailto:m.chanel07@yahoo.de">m.chanel07@yahoo.de</a></p>
+            <p>Bornstr.147, 44145 Dortmund, Deutschland</p>
+            <p><a href="map.html">Karte anzeigen</a></p>
+        </div>
+        <div class="footer-section">
+            <p>Senden Sie uns eine Nachricht.</p>
+            <p>Entwickelt von der DISH Digital Solutions GmbH. Alle Rechte vorbehalten.</p>
+            <p><a href="impressum.html">Impressum</a> | <a href="cookies.html">Cookie Einstellungen ändern</a> | <a href="privacy.html">Datenschutzerklärung</a></p>
+        </div>
+    </div>
+</footer>
+</body>
+</html>
